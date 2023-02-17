@@ -9,15 +9,15 @@ export function App() {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  const onLeaveGoodFeedback = e => {
+  const onLeaveGoodFeedback = () => {
     setGood(prevState => prevState + 1);
   };
 
-  const onLeaveNeutralFeedback = e => {
+  const onLeaveNeutralFeedback = () => {
     setNeutral(prevState => prevState + 1);
   };
 
-  const onLeaveBadFeedback = e => {
+  const onLeaveBadFeedback = () => {
     setBad(prevState => prevState + 1);
   };
 
