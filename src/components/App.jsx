@@ -34,6 +34,9 @@ export function App() {
       case 'bad':
         onLeaveBadFeedback();
         break;
+
+      default:
+        return;
     }
   };
 
