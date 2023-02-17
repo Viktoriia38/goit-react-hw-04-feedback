@@ -5,12 +5,6 @@ import { Statistic } from './Statistic/Statistic';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 
 export function App() {
-  // state = {
-  //   good: 0,
-  //   neutral: 0,
-  //   bad: 0,
-  // };
-
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
@@ -26,11 +20,6 @@ export function App() {
   const onLeaveBadFeedback = e => {
     setBad(prevState => prevState + 1);
   };
-
-  // const onLeaveBadFeedback = e => {
-  //   const { name } = e.target;
-  //   this.setState(prevState => ({ [name]: prevState[name] + 1 }));
-  // };
 
   const onLeaveFeedback = e => {
     switch (e.target.name) {
